@@ -1,7 +1,7 @@
 from flask import Flask, render_template, make_response, request, jsonify
 
 app = Flask(__name__)
-#mysql = MSQL (cursorclass=DictCursor)
+#mysql = MySQL (cursorclass=DictCursor)
 
 # app.config['MYSQL_DATABASE_HOST'] = 'db'
 # app.config['MYSQL_DATABASE_USER'] = 'root'
