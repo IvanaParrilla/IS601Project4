@@ -15,3 +15,9 @@ IX. Connect Flask to a Database with Flask-SQLAlchemy
 X. Handle User Accounts & Authentication in Flask with Flask-Login
 XI. Managing Session Data with Flask Session & Redis
 
+**Screenshots**
+Task I: 
+Task 1 Local Host Table Screenshot.PNG
+Task 1 in Pycharm.PNG
+Task 1 Merge Main Branch.PNG
+
