@@ -10,7 +10,9 @@ app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 app.config['MYSQL_DATABASE_DB'] = 'housingPrices'
+app.config['SECRET_KEY'] = 'secret'
 mysql.init_app(app)
+
 
 
 @app.route('/', methods=['GET'])
@@ -18,6 +20,7 @@ def home():
     if request.method != 'GET':
         return make_response('Malformed request', 400)
     return render_template('home.html')
+
 
 @app.route('/table', methods=['GET'])
 def table():
@@ -29,5 +32,24 @@ def table():
     headers = {"Content-Type:": "application/json"}
     return make_response(jsonify(result), 200, headers)
 
+
+@app.route('/zillow/<zipcode>', methods=['GET', 'POST'])
+def find_zipcode(zipcode):
+    cursor = mysql.get_db().cursor()
+    cursor.execute('SELECT * FROM zillow WHERE zip = %s', zipcode)
+    result = cursor.fetchall()
+    return render_template('table.html', houses=result)
+
+
+@app.route('/add_listing', methods=['GET', 'POST'])
+def add_listing():
+    form = ListingForm()
+    if form.validate_on_submit():
+        return redirect(url_for('success'))
+    return render_template('add.html', form=form)
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
+    
+
