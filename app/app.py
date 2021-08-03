@@ -4,6 +4,8 @@ from pymysql.cursors import DictCursor
 from forms import ListingForm
 
 app = Flask(__name__)
+app.config.from_pyfile('config.py')
+
 mysql = MySQL(cursorclass=DictCursor)
 
 app.config['MYSQL_DATABASE_HOST'] = 'db'
@@ -33,6 +35,14 @@ def table():
     return make_response(jsonify(result), 200, headers)
 
 
+@app.route('/zillow/<zipcode>', methods=['GET', 'POST'])
+def find_zipcode(zipcode):
+    cursor = mysql.get_db().cursor()
+    cursor.execute('SELECT * FROM zillow WHERE zip = %s', zipcode)
+    result = cursor.fetchall()
+    return render_template('table.html', houses=result)
+
+
 @app.route('/add_listing', methods=['GET', 'POST'])
 def add_listing():
     form = ListingForm()
@@ -42,4 +52,4 @@ def add_listing():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0')
