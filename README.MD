@@ -42,8 +42,12 @@ Task V:
 ![image](/screenshots/Task%205%20Pycharm%20Config%20Feature.PNG)
 
 Task VI:
+![image](/screenshots/TaskVIPycharmCode.png)
+
+Task VI:
 ![image](screenshots/TaskVISuccess.png)
 
-TaskVII:
+Additional Screenshots:
+
 
 
