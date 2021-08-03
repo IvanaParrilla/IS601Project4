@@ -3,12 +3,12 @@ use housingPrices;
 
 CREATE TABLE IF NOT EXISTS zillow (
     `index` INT AUTO_INCREMENT,
-    `living_space_sqft` VARCHAR(20) CHARACTER SET utf8,
+    `living_space_sqft` INT(20),
     `beds` VARCHAR(20) CHARACTER SET utf8,
     `baths` VARCHAR(20) CHARACTER SET utf8,
     `zip` VARCHAR(20) CHARACTER SET utf8,
     `year` VARCHAR(20) CHARACTER SET utf8,
-     `list_price` VARCHAR(20) CHARACTER SET utf8,
+    `list_price` INT(20),
     PRIMARY KEY (`index`)
 );
 
