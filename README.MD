@@ -30,16 +30,16 @@ Task I:
 ![image1](/screenshots/Task%201%20Local%20Host%20Table%20Screenshot.PNG)
 
 Task II:
-![image](/screenshots/TaskIIJijnaDemoSite.png)
+![image](/screenshots/Task%202%20in%20local%20host.PNG)
 
 Task III:
-![image](/screenshots/TaskIIILoginPage.png)
+![image](/screenshots/Task%203%20Local%20Host%20Screenshot.png)
 
 Task IV:
-![image](screenshots/TaskIIITutorial.png)
+![image](/screenshots/Task%204%20local%20host.png)
 
 Task V:
-![image](screenshots/TaskVLogin.png)
+![image](/screenshots/Task%205%20Pycharm%20Config%20Feature.PNG)
 
 Task VI:
 ![image](screenshots/TaskVISuccess.png)
