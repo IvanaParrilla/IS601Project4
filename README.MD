@@ -28,6 +28,22 @@ XI. Managing Session Data with Flask Session & Redis
 **Screenshots**
 Task I: 
 ![image1](/screenshots/Task%201%20Local%20Host%20Table%20Screenshot.PNG)
+
 Task II:
+![image](/screenshots/TaskIIJijnaDemoSite.png)
+
+Task III:
+![image](/screenshots/TaskIIILoginPage.png)
+
+Task IV:
+![image](screenshots/TaskIIITutorial.png)
+
+Task V:
+![image](screenshots/TaskVLogin.png)
+
+Task VI:
+![image](screenshots/TaskVISuccess.png)
+
+TaskVII:
 
 
