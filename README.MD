@@ -27,7 +27,7 @@ XI. Managing Session Data with Flask Session & Redis
 
 **Screenshots**
 Task I: 
-Task 1 Local Host Table Screenshot.PNG
-Task 1 in Pycharm.PNG
-Task 1 Merge Main Branch.PNG
+![image1](/screenshots/Task%201%20Local%20Host%20Table%20Screenshot.PNG)
+Task II:
+
 
