@@ -1,5 +1,6 @@
-from flask import Flask, render_template, make_response, request_jsonify
+from flask import Flask, render_template, make_response, request, jsonify
 from flaskext.mysql import MySQL
+from pymysql.cursors import DictCursor
 
 app = Flask(__name__)
 mysql = MySQL(cursorclass=DictCursor)
@@ -18,7 +19,6 @@ def home():
         return make_response('Malformed request', 400)
     return render_template('home.html')
 
-
 @app.route('/table', methods=['GET'])
 def table():
     if request.method != 'GET':
@@ -26,7 +26,8 @@ def table():
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM zillow')
     result = cursor.fetchall()
-    return render_template('table.html', houses=result)
+    headers = {"Content-Type:": "application/json"}
+    return make_response(jsonify(result), 200, headers)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
