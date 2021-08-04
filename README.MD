@@ -47,7 +47,23 @@ Task VI:
 Task VI:
 ![image](screenshots/TaskVISuccess.png)
 
-Additional Screenshots:
+Task VII:
+![image](/screenshots/TaskVIIBluePRint.png)
+
+![image](/screenshots/TaskVIIBlueprintrequirement.PNG)
+
+Task VIII:
+![image](/screenshots/TaskVIII%20Additional.png)
+
+![image](/screenshots/TaskVIII.png)
+
+![image](/screenshots/TaskVIIIConfig.png)
+
+TaskIX:
+![image](/screenshots/TaskIXconfig.png)
+
+Task X:
+![image](/screenshots/Taskx.PNG)
 
 
 
